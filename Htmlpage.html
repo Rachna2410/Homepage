@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<style>
+		.button{
+				background-color: white;
+				border: none;
+				cursor: pointer;
+		}
+	</style>
+</head>
+
+<body style="background-color: #f1f1f1;">
+
+	<nav style= "float: left; max-width: 120px; margin: 0; padding: 1em; background-color: white;" >
+
+		<ul style="list-style-type: none;">
+
+		<h1 style="text-align: center;"><i class="material-icons" style="font-size:36px">track_changes</i></h1>
+
+			<li><button class="button"><i class="material-icons">&#xe7fc;</i><br/><span>Students</span></button></li><br/><br/>
+			
+			<li><button onclick="myFunction()" class="button"><i class="material-icons">&#xe02f;</i><br/><span>Lesson Plan</span></button></li><br/><br/>
+
+			<li><button class="button"><i class="material-icons">&#xe8b8;</i><br/><span>Settings</span></button></li>
+		</ul>
+	</nav>
+
+	<header style="background-color: white; height: 80px;width: 100%"></header>
+	
+	<details><summary id="L1"></summary>
+	<p>Hello World</p></details>
+	<br/>
+	<br/>
+<div style="text-align: center;">
+	<input type="text" name="url" placeholder="Enter url here" style="width: 70%;" /><br/><br/>
+<b>or</b>
+   <br/>
+   <br/>
+	<button class="button" style= "width: 100px; height: 100px; float:left; margin-left: 100px;" ><b>Uploads</b></button>
+	
+
+ </div>
+ <script>
+	function myFunction() {
+		document.getElementById("L1").innerHTML="Videos";
+		
+	}
+</script>
+</body>
+</html>
